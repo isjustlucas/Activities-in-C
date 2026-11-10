@@ -1,5 +1,3 @@
-#include <stdio.h>
-
 /*
 Uma empresa de transporte por aplicativo de Feira de Santana precisa de um programa
 que simule o preço de uma corrida antes de o passageiro confirmar a viagem. Escreva um
@@ -12,7 +10,8 @@ abaixo e exiba um resumo.
 4. Dia da semana (int): 1 – Domingo, 2 – Segunda, . . . , 7 – Sábado;
 5. Hora de início (int, de 0 a 23);
 6. Possui cupom? (char): S ou N (aceitar maiúscula ou minúscula).
- */
+*/
+#include <stdio.h>
 
 int main(void)
 {

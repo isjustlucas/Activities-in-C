@@ -1,3 +1,11 @@
+/*
+Exercício 1. Classificador de triângulos (1,0 pt)
+Leia três valores reais correspondentes aos lados de um triângulo. Verifique se eles
+podem formar um triângulo (cada lado deve ser positivo e menor que a soma dos
+outros dois). Em caso afirmativo, classifique-o quanto aos lados (equilátero, isósceles
+ou escaleno) e informe também se ele é retângulo (pelo teorema de Pitágoras). Caso
+contrário, exiba Não forma triângulo .
+*/
 #include <stdio.h>
 #include <math.h>
 

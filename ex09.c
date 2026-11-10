@@ -1,3 +1,11 @@
+/*
+Exercício 9. Leitura com sentinela (1,0 pt)
+Leia as idades de um grupo de pessoas; a leitura termina quando for digitado -1
+(o −1 não faz parte dos dados). Idades fora de [0, 120] devem ser ignoradas com
+aviso. Ao final, exiba: quantidade de idades válidas, média, maior e menor idade e o
+percentual de pessoas com 18 anos ou mais. Se nenhuma idade válida for informada,
+exiba Nenhum dado informado (evite divisão por zero!).
+*/
 #include <stdio.h>
 
 int main(void)

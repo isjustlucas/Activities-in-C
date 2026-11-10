@@ -1,3 +1,10 @@
+/*
+Exercício 6. Ordenando três valores (1,0 pt)
+Leia três números inteiros e exiba-os em ordem crescente e, em seguida, em ordem
+decrescente, usando somente estruturas de seleção (sem laços e sem vetores). Informe
+também qual é o valor mediano. O programa deve funcionar corretamente quando
+houver valores repetidos.
+*/
 #include <stdio.h>
 
 int main(void)

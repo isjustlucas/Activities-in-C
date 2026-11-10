@@ -1,3 +1,13 @@
+/*
+Exercício 3. Conta de energia (1,0 pt)
+Uma distribuidora (valores fictícios) cobra a energia por faixas progressivas: os pri-
+meiros 100 kWh custam R$ 0,60 cada; do 101.o ao 200.o kWh, R$ 0,75 cada; o que
+
+exceder 200 kWh custa R$ 0,90 cada. Sobre o total, aplica-se a bandeira tarifária: V
+(verde) sem acréscimo, A (amarela) +5% e R (vermelha) +10%. Leia o consumo e a
+letra da bandeira (aceite maiúscula ou minúscula, usando switch ) e mostre o valor
+da conta. Uma bandeira inválida deve gerar uma mensagem de erro.
+*/
 #include <stdio.h>
 
 int main(void)

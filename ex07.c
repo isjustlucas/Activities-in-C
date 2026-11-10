@@ -1,3 +1,10 @@
+/*
+Exercício 7. Tabuada nas três formas (1,0 pt)
+Leia um inteiro N e exiba sua tabuada de 1 a 10 no formato 7 x 3 = 21 (use %2d
+e %3d para alinhar). Escreva três versões no mesmo programa: uma com for ,
+uma com while e uma com do-while . Em comentário, explique em que situação
+do-while e while se comportariam de forma diferente.
+*/
 int main(void)
 {
     int n, i;

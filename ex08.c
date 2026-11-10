@@ -1,3 +1,12 @@
+/*
+Exercício 8. Validação com do-while (1,0 pt)
+Leia duas notas de um aluno, repetindo a leitura de cada nota enquanto ela estiver
+fora do intervalo [0, 10] (exiba Nota inválida! a cada tentativa errada). Calcule a
+média e informe a situação: Aprovado (média ≥ 7,0), Prova final (4,0 ≤ média < 7,0)
+ou Reprovado (média < 4,0). Ao final, pergunte: Calcular outro aluno? (s/n) e
+repita todo o processo enquanto a resposta for s ou S .
+*/
+
 #include <stdio.h>
 
 int main(void)

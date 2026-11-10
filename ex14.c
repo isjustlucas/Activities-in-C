@@ -1,3 +1,11 @@
+/*
+Exercício 14. Conjectura de Collatz (1,0 pt)
+Dado um inteiro positivo n: se n for par, divida-o por 2; se for ímpar, faça 3n + 1.
+Repita até chegar a 1.
+a) Leia n, exiba a sequência completa e a quantidade de passos.
+b) Usando laços aninhados, descubra qual número entre 1 e 100 gera a sequência
+com mais passos e quantos passos ela tem.
+*/
 #include <stdio.h>
 
 int main() {

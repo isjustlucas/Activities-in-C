@@ -1,3 +1,9 @@
+/*
+Exercício 15. Padrões com laços aninhados (1,0 pt)
+Leia um inteiro N (1 ≤ N ≤ 20, validando a entrada) e desenhe as duas figuras
+abaixo (exemplo para N = 4): à esquerda, uma pirâmide centralizada de asteriscos;
+à direita, o triângulo de Floyd, com N linhas.
+*/
 #include <stdio.h>
 
 int main() {

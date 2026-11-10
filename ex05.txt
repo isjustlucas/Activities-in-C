@@ -1,5 +1,21 @@
 Ex05
+    Exercício 5. switch e fall-through (1,0 pt)
+    Considere o trecho abaixo:
+    1 switch (codigo) {
+    2   case 1: printf("Cafe\n");
+    3   case 2: printf("Suco\n"); break;
+    4   case 3:
+    5   case 4: printf("Agua\n"); break;
+    6   default: printf("Invalido\n");
+    7 }
+    a) Qual a saída para código igual a 1, 2, 3, 4 e 7?
+    b) Reescreva o trecho usando apenas if / else if / else , produzindo exatamente
+    a mesma saída.
+    c) Explique por que não é possível escrever diretamente em C um case para a
+    condição “ nota >= 7.0 ”. Como contornar essa limitação quando se deseja usar
+    switch para classificar notas inteiras de 0 a 10?
 
+---
 a)  Saída para 1: Cafe
                   Suco
     Saída para 2: Suco

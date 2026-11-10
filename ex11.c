@@ -1,3 +1,11 @@
+/*
+Exercício 11. Números primos (1,0 pt)
+Leia dois inteiros A e B (se A > B, troque-os). Liste todos os números primos do
+intervalo [A, B] e, ao final, informe quantos foram encontrados. Use laços aninhados:
+o laço externo percorre o intervalo e o interno testa os divisores. Otimize o teste
+interrompendo-o ( break ) assim que um divisor for encontrado e testando divisores
+apenas até √n (condição d * d <= n ). Lembre-se: 0 e 1 não são primos.
+*/
 #include <stdio.h>
 
 int main() {

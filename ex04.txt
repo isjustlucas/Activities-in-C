@@ -1,5 +1,25 @@
 Ex04
+    Exercício 4. Teste de mesa — if aninhado (1,0 pt)
+    Analise o trecho abaixo, que lê dois inteiros a e b :
+    1 if (a > b)
+    2   if (a % 2 == 0)
+    3       printf("A");
+    4   else
+    5       printf("B");
+    6 else if (a == b)
+    7   printf("C");
+    8 else
+    9   printf("D");
+    10 if (a = 0)
+    11  printf("E");
+    12 printf("F\n");
+    a) Qual a saída para as entradas (8,3) , (7,3) , (5,5) e (2,9) ?
+    b) A qual if pertence o else da linha 4? Justifique e reescreva o trecho usando
+    chaves para deixar isso explícito.
+    c) A linha 10 contém um erro clássico. Explique o que acontece, por que E nunca
+    é impresso e qual o valor de a após essa linha.
 
+---
 a) a = 8, b = 3
     if (8 > 3) // VERDADE
         if (8 % 2 == 0) // VERDADE

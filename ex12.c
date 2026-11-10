@@ -1,3 +1,10 @@
+/*
+Exercício 12. MDC e MMC (1,0 pt)
+Leia dois inteiros positivos (repita a leitura enquanto algum deles for ≤ 0). Calcule
+o MDC pelo algoritmo de Euclides — enquanto o resto da divisão de a por b não for
+zero, faça a ← b e b ← resto — e, depois, o MMC, usando a relação MMC(a, b) = (a · b)/MDC(a, b)
+. Mostre também quantas iterações o algoritmo
+*/
 #include <stdio.h>
 
 int main()

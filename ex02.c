@@ -1,3 +1,10 @@
+/*
+Exercício 2. Dias do mês (1,0 pt)
+Leia um mês (1–12) e um ano e informe quantos dias aquele mês possui. Use switch ,
+aproveitando o fall-through, para agrupar os meses de 30 e 31 dias. Para fevereiro,
+considere que um ano é bissexto se for divisível por 4 e não por 100, ou se for divisível
+por 400. Valide o mês (mês inválido deve gerar mensagem de erro).
+*/
 #include <stdio.h>
 
 int main(void)

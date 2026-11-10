@@ -1,3 +1,13 @@
+/*
+Exercício 13. Aproximando π com uma série (1,0 pt)
+A série de Leibniz converge para π/4:
+S = 1 − 1/3 + 1/5 − 1/7 + 1/9 − · · ·
+
+a) Leia N e calcule 4S usando os N primeiros termos (use for ; alterne o sinal
+sem usar pow ).
+b) Usando while , descubra quantos termos são necessários para que |4S − π| <
+0,001 (use π ≈ 3,14159265358979). Por que aqui while é mais adequado que for ?
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>

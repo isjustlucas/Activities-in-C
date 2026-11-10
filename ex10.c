@@ -1,3 +1,9 @@
+/*
+Exercício 10. Manipulando dígitos (1,0 pt)
+Leia um inteiro não negativo e, usando apenas os operadores / e % dentro de um
+laço, informe: a quantidade de dígitos, a soma dos dígitos, o número invertido e se
+ele é um palíndromo. Atenção ao número 0 , que possui 1 dígito.
+*/
 #include <stdio.h>
 
 int main(void)
