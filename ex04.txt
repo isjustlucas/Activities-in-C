@@ -1,0 +1,56 @@
+Ex04
+
+a) a = 8, b = 3
+    if (8 > 3) // VERDADE
+        if (8 % 2 == 0) // VERDADE
+            PRINTA "A"
+    if (a = 0) // Atribui 0 a "a", valor da expressao = 0, logo é FALSO
+    PRINTA "F" e quebra linha
+    Resultado = "AF"
+
+    a = 7, b = 3
+    if(7 > 3) // VERDADE
+        if (7 % 2 == 0) // FALSO
+        else
+            PRINTA "B"
+    if (a = 0) // Atribui 0 a "a", valor da expressao = 0, logo é FALSO
+    PRINTA "F" e quebra linha
+    Resultado = "BF"
+
+    a = 5, b = 5
+    if (5 > 5) // FALSO
+    else if (5 == 5) // VERDADE
+        PRINTA "C"
+    if (a = 0) // Atribui 0 a "a", valor da expressao = 0, logo é FALSO
+    PRINTA "F" e quebra linha
+    Resultado = "CF"
+
+    a = 2, b = 9
+    if (2 > 9) // FALSO
+    else if (2 == 9) // FALSO
+    else
+        PRINTA "D"
+    if (a = 0) // Atribui 0 a "a", valor da expressao = 0, logo é FALSO
+    PRINTA "F" e quebra linha
+    Resultado = "DF"
+
+b) O else da linha 4 pertece ao if da linha 2 (if (a % 2 == 0)).
+    Justificativa: O else sempre se associa ao if mais proximo que ainda nao tem else.
+    
+    if (a > b) {
+        if (a % 2 == 0) {
+            printf("A");
+        } else {
+            printf("B");
+        }
+    } else if (a == b) {
+        printf("C");
+    } else {
+        printf("D");
+    }
+    if (a = 0) {
+        printf("E");
+    }
+    printf("F\n");
+
+c) Na linha 10, "a = 0" é uma atribuição e não uma comparação, o valor 0 e gravado em "a". A expressao "a" vale 0, em C 0 é tratado como falso, entao o printf("E") nunca e executado. a fica valendo 0 (a = 0).

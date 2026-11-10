@@ -1,0 +1,23 @@
+Ex05
+
+a)  Saída para 1: Cafe
+                  Suco
+    Saída para 2: Suco
+    Saída para 3: Agua
+    Saída para 4: Agua
+    Saída para 7: Invalido
+
+b) if (codigo == 1) {
+    printf("Cafe\n");
+    printf("Suco\n");
+} else if (codigo == 2) {
+    printf("Suco\n");
+} else if (codigo == 3 || codigo == 4) {
+    printf("Agua\n");
+} else {
+    printf("Invalido\n");
+}
+
+c) Em C, o switch-case é usado para valores constantes e compara por igualdade,
+   e não consegue incluir condições genéricas ou variáveis float/double como (nota >= 7.0). 
+   A solução seria usar cases e breaks de 0 a 10, e em cada caso colocar um output ou processamento.
