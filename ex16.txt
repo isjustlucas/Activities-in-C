@@ -1,0 +1,68 @@
+Ex16
+    Exercício 16. Teste de mesa — break e continue (1,0 pt)
+    Sem executar no computador, determine a saída exata do trecho abaixo, montando
+    uma tabela com os valores de i , j e cont a cada iteração. Depois, confira execu-
+    tando o código.
+    1 int i, j, cont = 0;
+    2 for (i = 1; i <= 4; i++) {
+    3   for (j = 1; j <= 4; j++) {
+    4       if (j == i) continue;
+    5       if (i + j > 6) break;
+    6       cont++;
+    7       printf("(%d,%d) ", i, j);
+    8   }
+    9   printf("\n");
+    10 }
+    11 printf("cont = %d\n", cont);
+
+    1° interação
+    i = 1; j = 1; cont = 0;
+    2° interação
+    i = 1; j = 2; cont = 1;
+    3° interação
+    i = 1; j = 3; cont = 2;
+    4° interação
+    i = 1; j = 4; cont = 3;
+    5° interação
+    i = 2; j = 1; cont = 4;
+    6° interação
+    i = 2; j = 2; cont = 4;
+    7° interação
+    i = 2; j = 3; cont = 5;
+    8° interação
+    i = 2; j = 4; cont = 6;
+    9° interação
+    i = 3; j = 1; cont = 7;
+    10° interação
+    i = 3; j = 2; cont = 8;
+    11° interação
+    i = 3; j = 3; cont = 8;
+    12° interação
+    i = 3; j = 4; cont = 8;
+    13° interação
+    i = 4; j = 1; cont = 9;
+    14° interação
+    i = 4; j = 2; cont = 10;
+    15° interação
+    i = 4; j = 3; cont = 10;
+
+    a) Qual a saída completa?
+    -   (1,2) (1,3) (1,4)
+        (2,1) (2,3) (2,4)
+        (3,1) (3,2)
+        (4,1) (4,2)
+        cont = 10
+
+    b) Que diferença haveria na saída se o break da linha 5 fosse trocado por
+    continue?
+    -   Nada, o output continuaria sendo o mesmo. O break só dispara quando i + j > 6:
+    em (3,4) e (4,3). Em (3,4), j = 4 já é a última volta, então break e continue acabam
+    igual. Em (4,3), o continue deixaria rodar a volta (4,4), mas nela j == i, 
+    então a linha 4 aciona outro continue e nada é impresso nem somado. 
+    Logo o output e o cont = 10 continuam os mesmos.
+
+
+
+
+
+
