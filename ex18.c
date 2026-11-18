@@ -1,3 +1,12 @@
+/*
+Exercício 18. Jogo de adivinhação (1,0 pt)
+O computador sorteia um número secreto entre 1 e 100 (use srand(time(NULL)) e
+rand() % 100 + 1 , incluindo <stdlib.h> e <time.h> ). O jogador tem no máximo 7
+tentativas; a cada palpite o programa informa Maior , Menor ou Acertou! . Palpites
+fora de [1, 100] não contam como tentativa. Ao final, revele o número (se o jogador
+perdeu) e pergunte se deseja jogar novamente. Exiba, ao sair, quantas partidas foram
+jogadas e quantas foram vencidas.
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
