@@ -1,0 +1,53 @@
+Exercício 17. Caça aos erros (1,0 pt)
+O programa abaixo deveria ler n e exibir a soma 1 + 2 + · · · + n e o fatorial n!, mas
+contém pelo menos seis erros (de compilação, de lógica ou de execução). Identifique
+cada erro (linha e explicação) e entregue a versão corrigida.
+
+1   int n, i, soma, fat;
+2   printf("Digite n: ");
+3   scanf("%d", n);
+4   for (i = 1; i <= n; i++);
+5       soma = soma + i;
+6   fat = 0;
+7   i = n;  1 = n
+8   while (i > 1)
+9       fat = fat * i;
+10      i--;
+11  if (soma = 0)
+12      printf("Nada a somar\n");
+13  printf("Soma = %d, Fatorial = %d\n", soma, fat);
+
+Linha 1: Errado (soma e fat não são inicializadas)
+Linha 3: Errado (passa o valor de n, não o endereço, falta o &)
+Linha 4: O for não abre chaves e tem corpo vazia
+Linha 6: fat = 0, faz todo produto dar 0. fat = 1 iria corrigir.
+Linha 8-10: O while não abre chaves, só o fat = fat * i entra, o resto fica de fora,
+            além disso, o laço nunca termina quando n > 1;
+Linha 11: o if (soma = 0) é uma atribuição para a variável, o certo seria (soma == 0)
+
+Versão corrigida:
+#include <stdio.h>
+
+int main() {
+    int n, i, soma = 0, fat = 1;
+
+    printf("Digite n: ");
+    scanf("%d", &n);
+
+    for (i = 1; i <= n; i++) {
+        soma = soma + i;
+    }
+
+    i = n;
+    while (i > 1) {
+        fat = fat * i;
+        i--;
+    }
+
+    if (soma == 0) {
+        printf("Nada a somar\n");
+    }
+    
+    printf("Soma = %d, Fatorial = %d\n", soma, fat);
+    return 0;
+}
